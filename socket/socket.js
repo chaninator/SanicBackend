@@ -4,8 +4,8 @@ module.exports = function(server){
 
   // this will be the domain where our frontend is located
   url = 'http://localhost:4000'
-
-  var io = require('socket.io')(server, {origins: url});
+  //, {origins: url}
+  var io = require('socket.io')(server);
 
   function updateVotes () {
     //Votes.find... the vote talley and emit
